@@ -1,0 +1,108 @@
+
+#point{
+    width: 280px;
+    height: 280px;
+    background: url('https://www.clipartwiki.com/clipimg/detail/13-132062_pointing-finger-images-point-your-finger.png') center no-repeat;
+  background-size: cover;
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  animation: clips 3s ease infinite;
+}
+
+@keyframes clips {
+  50% {
+clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%)
+  }
+}
+
+
+html, body { height: 100%; }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+  position: absolute;
+  animation-name: background-change;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes background-change{
+
+    from{background-color: purple;
+
+    }
+    to{background-color: blue;
+
+    }
+  }
+
+
+
+  .o{
+    height: 100px;
+    width: 50px;
+    background-color: black;
+    margin-bottom: 10px;
+
+  }
+
+  .sbridge {
+    height: 150px;
+    width: 50px;
+    background-color: black;
+
+  }
+
+.oi{
+  height: 100px;
+  width: 50px;
+  background-color: black;
+  margin-left: 10px;
+}
+
+.i{
+  height: 150px;
+  width: 50px;
+  background-color: black;
+  margin-left: 10px;
+}
+
+.n{
+  height: 150px;
+  width: 100px;
+  background-color: black;
+  margin-left: 10px;
+}
+
+.toptriangle{
+position: fixed;
+  padding-right: 3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 15px 0 15px;
+  border-color: white transparent transparent transparent;
+
+
+}
+
+.t{
+  height: 150px;
+  width: 50px;
+  background-color: black;
+  margin-left: 10px;
+}
+
+.tt{
+  height: 50px;
+  width: 10px;
+  background-color: black;
+  margin-bottom: 10px;
+
+}
+
+/*create arrow to refer to the point word verb and have existing clip art photo for the verb
+/ then have background changes triggered by keyframes media and javascript
